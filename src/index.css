@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+/* ── Design Tokens (Tailwind v4 @theme) ── */
+@theme {
+  --font-headline: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Inter", sans-serif;
+
+  --color-surface: #fdf9ef;
+  --color-surface-dim: #dddad0;
+  --color-surface-bright: #fdf9ef;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f7f3e9;
+  --color-surface-container: #f2eee3;
+  --color-surface-container-high: #ece8de;
+  --color-surface-container-highest: #e6e2d8;
+  --color-surface-variant: #e6e2d8;
+
+  --color-primary: #9d2116;
+  --color-primary-container: #bf3a2b;
+  --color-primary-fixed: #ffdad4;
+  --color-primary-fixed-dim: #ffb4a8;
+
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #ffe5e1;
+  --color-on-primary-fixed: #410000;
+  --color-on-primary-fixed-variant: #8d150c;
+
+  --color-secondary: #9e4300;
+  --color-secondary-container: #ff843b;
+  --color-secondary-fixed: #ffdbcb;
+  --color-secondary-fixed-dim: #ffb691;
+
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #662900;
+  --color-on-secondary-fixed: #341100;
+  --color-on-secondary-fixed-variant: #783100;
+
+  --color-tertiary: #704b00;
+  --color-tertiary-container: #8f6100;
+  --color-tertiary-fixed: #ffddaf;
+  --color-tertiary-fixed-dim: #ffba44;
+
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #ffe8cb;
+  --color-on-tertiary-fixed: #281800;
+  --color-on-tertiary-fixed-variant: #614000;
+
+  --color-on-surface: #1c1c16;
+  --color-on-surface-variant: #59413d;
+  --color-on-background: #1c1c16;
+  --color-background: #fdf9ef;
+
+  --color-outline: #8d706c;
+  --color-outline-variant: #e1bfb9;
+
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-on-error: #ffffff;
+  --color-on-error-container: #93000a;
+
+  --color-inverse-surface: #32312a;
+  --color-inverse-on-surface: #f5f0e6;
+  --color-inverse-primary: #ffb4a8;
+
+  --color-surface-tint: #af2f21;
+
+  --radius-DEFAULT: 1rem;
+  --radius-lg: 2rem;
+  --radius-xl: 3rem;
+  --radius-full: 9999px;
+
+  --animate-marquee: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ── Base Styles ── */
+html {
+  scroll-behavior: auto; /* Lenis handles smooth scroll */
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-on-surface);
+  background-color: var(--color-surface);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* ── Grainy Background ── */
+.grainy-bg {
+  background-color: #ede9df;
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD8FnOngjTIQRVnRDJ2G6kSIAGz53hSh2m3i1mHt4eA7g37E466leBR11QLUob2eO3820ZFDZ8w4qdMunW4rLTZP0hQBD_1RwlAbGXmJca4RoMZV6uDxZJzn3wDsfXJHyjuMaW2ox6Mph-Dq_xFlKx34x0hPAg5O3xb7D_0E0L0l23185AzNNp160T6jufeeFki2OI7xLYq3XgfOI6B5JNUrfMx-NqH4fWDEQrLDiY18ow502hcRwCSuN9od0Hb2LOEa52dh17WBY6e");
+  background-size: cover;
+  background-position: center;
+}
+
+/* ── Glass Card ── */
+.glass-card {
+  background: rgba(253, 249, 239, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(225, 191, 185, 0.3);
+}
+
+/* ── Active Dot Pulse ── */
+@keyframes pulse-orange {
+  0% {
+    box-shadow: 0 0 0 0px rgba(189, 58, 43, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(189, 58, 43, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0px rgba(189, 58, 43, 0);
+  }
+}
+.active-dot {
+  animation: pulse-orange 2s infinite;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-surface-container);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-outline-variant);
+  border-radius: 3px;
+}
