@@ -109,14 +109,6 @@ export default function ComparisonTableSection() {
                 </tr>
               ))}
             </tbody>
-            <tfoot>
-              <tr>
-                <td colSpan={3}></td>
-                <td className="bg-primary/5 rounded-b-2xl border-x border-b border-primary/20 py-4 text-center">
-                  <span className="text-[10px] font-black text-primary uppercase tracking-tighter">Winner: Creators</span>
-                </td>
-              </tr>
-            </tfoot>
           </table>
         </motion.div>
 
