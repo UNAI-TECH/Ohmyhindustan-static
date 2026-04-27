@@ -1,12 +1,10 @@
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import { ArrowRight, Newspaper, LockOpen } from "lucide-react";
 import Globe from "../Globe";
 import MagneticButton from "../shared/MagneticButton";
-import { fadeUpVariant, staggerContainer } from "../../lib/animations";
+import { fadeUpVariant } from "../../lib/animations";
 
 export default function HeroSection() {
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
     <section
