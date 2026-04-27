@@ -56,7 +56,12 @@ export default function FeaturesSection() {
             {currentTab.data.map((f) => (
               <TiltCard key={f.title} className="bg-surface p-7 rounded-2xl border border-outline-variant/10 h-full hover:shadow-lg hover:shadow-primary/5 transition-shadow duration-500">
                 <div className="w-12 h-12 bg-primary/10 text-primary flex items-center justify-center rounded-xl mb-5">{ICONS[f.icon]}</div>
-                <h3 className="text-lg font-bold mb-2 font-headline">{f.title}</h3>
+                <h3 className="text-lg font-bold mb-2 font-headline flex items-center gap-2">
+                  {f.title}
+                  {(f as any).isBeta && (
+                    <span className="text-[10px] bg-primary/10 text-primary px-2 py-0.5 rounded-full uppercase font-black tracking-tighter">Beta</span>
+                  )}
+                </h3>
                 <p className="text-on-surface-variant text-sm leading-relaxed">{f.description}</p>
               </TiltCard>
             ))}

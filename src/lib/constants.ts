@@ -139,7 +139,7 @@ export const CITIZEN_FEATURES = [
   },
   {
     icon: "Bell",
-    title: "Real-Time Notifications",
+    title: "Instant Updates",
     description:
       "Never miss important updates from your favorite creators.",
   },
@@ -154,22 +154,10 @@ export const CREATOR_FEATURES = [
       "Intuitive dashboard to write, publish, and manage all your content.",
   },
   {
-    icon: "FileVideo",
-    title: "Multi-Format Publishing",
-    description:
-      "Articles, videos, blogs, forums, live debates, and policy discussions.",
-  },
-  {
     icon: "BarChart3",
     title: "Advanced Analytics",
     description:
       "See exactly who's engaging with your work and how.",
-  },
-  {
-    icon: "Subtitles",
-    title: "AI-Powered Subtitles",
-    description:
-      "Auto-generate subtitles for videos in multiple languages.",
   },
   {
     icon: "TrendingUp",
@@ -178,7 +166,22 @@ export const CREATOR_FEATURES = [
       "Understand what resonates and grow authentically.",
   },
   {
+    icon: "FileVideo",
+    isBeta: true,
+    title: "Multi-Format Publishing",
+    description:
+      "Articles, videos, blogs, forums, live debates, and policy discussions.",
+  },
+  {
+    icon: "Subtitles",
+    isBeta: true,
+    title: "AI-Powered Subtitles",
+    description:
+      "Auto-generate subtitles for videos in multiple languages.",
+  },
+  {
     icon: "Banknote",
+    isBeta: true,
     title: "Monetization Tools",
     description:
       "Earn directly from your audience with transparent payment tracking.",
