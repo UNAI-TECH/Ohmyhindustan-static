@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Newspaper, LockOpen } from "lucide-react";
 import Globe from "../Globe";
 import MagneticButton from "../shared/MagneticButton";
 import { fadeUpVariant, staggerContainer } from "../../lib/animations";
@@ -10,7 +10,7 @@ export default function HeroSection() {
 
   return (
     <section
-      id="features"
+      id="hero"
       className="relative min-h-screen pt-32 pb-20 bg-white flex items-center overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -25,22 +25,22 @@ export default function HeroSection() {
           {/* Badge */}
           <motion.div
             variants={fadeUpVariant}
-            className="inline-flex items-center gap-2 bg-surface-container-high px-4 py-1.5 rounded-full border border-outline-variant/20 mb-8"
+            className="inline-flex items-center gap-2 bg-surface-container-high px-3 md:px-4 py-1.5 rounded-full border border-outline-variant/20 mb-6 md:mb-8"
           >
-            <span className="w-2.5 h-2.5 bg-primary rounded-full active-dot" />
-            <span className="text-xs font-bold tracking-widest uppercase text-on-surface-variant">
-              India's #1 Citizen Journalism Platform
+            <span className="w-2 h-2 md:w-2.5 md:h-2.5 bg-primary rounded-full active-dot" />
+            <span className="text-[10px] md:text-xs font-bold tracking-widest uppercase text-on-surface-variant">
+              Your Voice. Your Platform. Your Fair Share.
             </span>
           </motion.div>
 
           {/* Headline */}
           <motion.h1
             variants={fadeUpVariant}
-            className="text-6xl md:text-8xl font-headline font-bold leading-[0.9] tracking-tighter text-on-surface mb-8"
+            className="text-5xl md:text-7xl lg:text-8xl font-headline font-bold leading-[0.9] tracking-tighter text-on-surface mb-8"
           >
-            Every Citizen, <br />
+            Reclaim Your{" "}
             <span className="relative inline-block">
-              Reporter.
+              Voice.
               <svg
                 className="absolute -bottom-2 left-0 w-full h-4 text-secondary-container"
                 viewBox="0 0 100 10"
@@ -52,28 +52,34 @@ export default function HeroSection() {
                 />
               </svg>
             </span>
+            <br />
+            Own Your Platform.
+            <br />
+            <span className="text-primary">Change Your Future.</span>
           </motion.h1>
 
           {/* Subtitle */}
           <motion.p
             variants={fadeUpVariant}
-            className="text-xl text-on-surface-variant max-w-lg mb-10 leading-relaxed"
+            className="text-lg md:text-xl text-on-surface-variant max-w-lg mb-10 leading-relaxed"
           >
-            OMH puts the tools of journalism into every Indian's smartphone.
-            Real-time updates, local voices, and a creator economy built for
-            truth.
+            In a world of algorithmic gatekeepers and hidden agendas, there's a
+            new way to share what matters. OMH is the platform where citizen
+            journalists, creators, and voices like yours thrive — without
+            compromise, without algorithms deciding your worth, and with real
+            rewards for your work.
           </motion.p>
 
           {/* CTAs */}
           <motion.div
             variants={fadeUpVariant}
-            className="flex flex-wrap gap-4 mb-12"
+            className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-10 md:mb-12"
           >
-            <MagneticButton className="bg-primary text-on-primary px-8 py-4 rounded-full font-bold flex items-center gap-2 cursor-pointer shadow-lg shadow-primary/20">
-              Get the App
+            <MagneticButton className="bg-primary text-on-primary px-6 md:px-8 py-3.5 md:py-4 rounded-full font-bold flex items-center justify-center gap-2 cursor-pointer shadow-lg shadow-primary/20 text-sm md:text-base">
+              Download Now
             </MagneticButton>
-            <MagneticButton className="border-2 border-primary text-primary px-8 py-4 rounded-full font-bold flex items-center gap-2 cursor-pointer hover:bg-primary/5 transition-all">
-              Become a Creator <ArrowRight size={18} />
+            <MagneticButton className="border-2 border-primary text-primary px-6 md:px-8 py-3.5 md:py-4 rounded-full font-bold flex items-center justify-center gap-2 cursor-pointer hover:bg-primary/5 transition-all text-sm md:text-base">
+              Become a Creator <ArrowRight size={16} />
             </MagneticButton>
           </motion.div>
 
@@ -97,7 +103,7 @@ export default function HeroSection() {
               ))}
             </div>
             <p className="text-sm font-medium text-on-surface-variant">
-              Trusted by 12,000+ local reporters across India
+              Join thousands of citizen journalists & creators
             </p>
           </motion.div>
         </motion.div>
@@ -117,10 +123,10 @@ export default function HeroSection() {
               transition={{ delay: 1, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
               className="absolute top-1/4 -left-4 lg:-left-8 glass-card p-4 lg:p-6 rounded-lg shadow-xl"
             >
-              <span className="text-primary mb-2 block text-2xl">💰</span>
-              <h4 className="text-xl lg:text-2xl font-bold">₹38,500/mo</h4>
+              <span className="text-primary mb-2 block"><Newspaper size={28} /></span>
+              <h4 className="text-xl lg:text-2xl font-bold">60%</h4>
               <p className="text-xs text-on-surface-variant font-bold uppercase tracking-widest">
-                Avg Creator Earn
+                Creator Revenue
               </p>
             </motion.div>
 
@@ -130,10 +136,10 @@ export default function HeroSection() {
               transition={{ delay: 1.2, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
               className="absolute bottom-1/4 right-0 glass-card p-4 lg:p-6 rounded-lg shadow-xl"
             >
-              <span className="text-secondary mb-2 block text-2xl">⚡</span>
-              <h4 className="text-xl lg:text-2xl font-bold">500ms</h4>
+              <span className="text-secondary mb-2 block"><LockOpen size={28} /></span>
+              <h4 className="text-xl lg:text-2xl font-bold">Zero</h4>
               <p className="text-xs text-on-surface-variant font-bold uppercase tracking-widest">
-                Live Delivery
+                Hidden Algorithms
               </p>
             </motion.div>
           </div>

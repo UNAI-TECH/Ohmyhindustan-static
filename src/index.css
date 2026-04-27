@@ -143,3 +143,35 @@ body {
   background: var(--color-outline-variant);
   border-radius: 3px;
 }
+
+/* ── Donut Chart for Revenue ── */
+@keyframes donut-fill {
+  from {
+    stroke-dasharray: 0 100;
+  }
+}
+
+/* ── Step connector line animation ── */
+@keyframes grow-line {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+.step-line {
+  transform-origin: top;
+  animation: grow-line 0.6s ease-out forwards;
+}
+
+/* ── FAQ Accordion ── */
+.faq-answer {
+  overflow: hidden;
+}
+
+/* ── Avatar gradient backgrounds ── */
+.avatar-p { background: linear-gradient(135deg, #9d2116, #bf3a2b); }
+.avatar-r { background: linear-gradient(135deg, #9e4300, #ff843b); }
+.avatar-a { background: linear-gradient(135deg, #704b00, #8f6100); }
+.avatar-v { background: linear-gradient(135deg, #1c1c16, #59413d); }

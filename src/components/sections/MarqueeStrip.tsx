@@ -1,7 +1,6 @@
 import { MARQUEE_ITEMS } from "../../lib/constants";
 
 export default function MarqueeStrip() {
-  // Duplicate items for seamless infinite scroll
   const items = [...MARQUEE_ITEMS, ...MARQUEE_ITEMS];
 
   return (
