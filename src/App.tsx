@@ -8,6 +8,7 @@ import FeaturesSection from "./components/sections/FeaturesSection";
 import TrustSection from "./components/sections/TrustSection";
 import HowItWorksSection from "./components/sections/HowItWorksSection";
 import RevenuePromiseSection from "./components/sections/RevenuePromiseSection";
+import ComparisonTableSection from "./components/sections/ComparisonTableSection";
 import StoriesSection from "./components/sections/StoriesSection";
 import FAQSection from "./components/sections/FAQSection";
 import CTASection from "./components/sections/CTASection";
@@ -25,6 +26,7 @@ export default function App() {
         <TrustSection />
         <HowItWorksSection />
         <RevenuePromiseSection />
+        <ComparisonTableSection />
         <StoriesSection />
         <FAQSection />
         <CTASection />

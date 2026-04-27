@@ -222,10 +222,10 @@ export const TRUST_BUILDERS = [
       "A technology organization dedicated to democratic digital infrastructure.",
   },
   {
-    icon: "Code2",
-    title: "Open-Source Foundation",
+    icon: "ShieldCheck",
+    title: "Zero Hidden Algorithms",
     description:
-      "Our code is transparent and community-auditable.",
+      "No opaque systems. You see what matters based on chronological merit, not platform agendas.",
   },
   {
     icon: "Heart",

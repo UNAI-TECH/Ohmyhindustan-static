@@ -85,8 +85,10 @@ export default function RevenuePromiseSection() {
           </motion.div>
         </div>
 
+
+
         {/* Quote */}
-        <motion.p variants={fadeUpVariant} className="text-center text-primary-fixed-dim font-headline text-lg md:text-xl italic">
+        <motion.p variants={fadeUpVariant} className="text-center text-primary-fixed-dim font-headline text-lg md:text-xl italic mt-16">
           "No fine print. No hidden fees. Just a clear, transparent partnership."
         </motion.p>
       </motion.div>

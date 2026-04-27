@@ -9,7 +9,7 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative h-screen min-h-[650px] lg:h-[92vh] bg-white overflow-hidden flex flex-col"
+      className="relative min-h-screen lg:min-h-[700px] bg-white overflow-hidden flex flex-col"
     >
       {/* Mobile & Desktop Container */}
       <div className="flex-1 flex flex-col items-center justify-center lg:items-start pt-12 lg:pt-20 pb-4 lg:pb-8 px-6 max-w-7xl mx-auto w-full relative z-10">
@@ -22,7 +22,7 @@ export default function HeroSection() {
               variants={fadeUpVariant}
               initial="hidden"
               animate="visible"
-              className="text-4xl md:text-5xl lg:text-7xl font-headline font-bold leading-[1.1] lg:leading-[0.95] tracking-tighter text-on-surface mb-4 lg:mb-6"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-headline font-bold leading-[1.1] lg:leading-[0.95] tracking-tighter text-on-surface mb-4 lg:mb-6"
             >
               Reclaim Your{" "}
               <span className="relative inline-block">
@@ -75,15 +75,22 @@ export default function HeroSection() {
               <MagneticButton className="bg-primary text-on-primary px-8 py-3.5 lg:py-4 rounded-full font-bold flex items-center justify-center gap-2 cursor-pointer shadow-lg shadow-primary/20 text-sm lg:text-base w-full lg:w-auto">
                 Download Now
               </MagneticButton>
-              <MagneticButton className="border-2 border-primary text-primary px-8 py-3.5 lg:py-4 rounded-full font-bold flex items-center justify-center gap-2 cursor-pointer hover:bg-primary/5 transition-all text-sm lg:text-base w-full lg:w-auto">
-                Become a Creator <ArrowRight size={16} />
-              </MagneticButton>
+              <a 
+                href="https://www.itsomh.online/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-full lg:w-auto"
+              >
+                <MagneticButton className="border-2 border-primary text-primary px-8 py-3.5 lg:py-4 rounded-full font-bold flex items-center justify-center gap-2 cursor-pointer hover:bg-primary/5 transition-all text-sm lg:text-base w-full">
+                  Become a Creator <ArrowRight size={16} />
+                </MagneticButton>
+              </a>
             </motion.div>
           </div>
 
           {/* Desktop Globe Container - Hidden on mobile */}
           <div className="hidden lg:flex relative items-center justify-center h-full">
-            <div className="relative w-full aspect-square max-w-[600px] flex items-center justify-center">
+            <div className="relative w-full aspect-square max-w-[400px] lg:max-w-[500px] xl:max-w-[600px] flex items-center justify-center">
 
               <Globe />
               

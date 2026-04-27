@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Building, Code2, Heart, Award } from "lucide-react";
+import { Building, Heart, Award, ShieldCheck } from "lucide-react";
 import TiltCard from "../shared/TiltCard";
 import { fadeUpVariant, staggerContainer } from "../../lib/animations";
 import { TRUST_BUILDERS } from "../../lib/constants";
 
 const ICONS: Record<string, React.ReactNode> = {
   Building: <Building size={28} />,
-  Code2: <Code2 size={28} />,
+  ShieldCheck: <ShieldCheck size={28} />,
   Heart: <Heart size={28} />,
   Award: <Award size={28} />,
 };

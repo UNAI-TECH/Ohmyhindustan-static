@@ -36,9 +36,15 @@ export default function CTASection() {
             <MagneticButton className="bg-white text-primary-container px-8 md:px-10 py-4 md:py-5 rounded-full font-black cursor-pointer text-base md:text-lg shadow-2xl hover:shadow-white/20 transition-shadow">
               Download OMH Now
             </MagneticButton>
-            <MagneticButton className="bg-transparent border-2 border-white/50 text-white px-8 md:px-10 py-4 md:py-5 rounded-full font-black cursor-pointer hover:bg-white/10 transition-all text-base md:text-lg flex items-center gap-2">
-              Start as a Creator <ArrowRight size={18} />
-            </MagneticButton>
+            <a 
+              href="https://www.itsomh.online/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <MagneticButton className="bg-transparent border-2 border-white/50 text-white px-8 md:px-10 py-4 md:py-5 rounded-full font-black cursor-pointer hover:bg-white/10 transition-all text-base md:text-lg flex items-center gap-2">
+                Start as a Creator <ArrowRight size={18} />
+              </MagneticButton>
+            </a>
           </div>
           <a href="#features" className="inline-block mt-6 text-white/50 hover:text-white/80 text-sm font-medium underline underline-offset-4 transition-colors">
             Learn More
