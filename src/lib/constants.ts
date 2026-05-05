@@ -11,10 +11,10 @@ export const MARQUEE_ITEMS = [
 
 // ── Nav Links ──
 export const NAV_LINKS = [
-  { label: "Features", href: "#features" },
-  { label: "How It Works", href: "#how-it-works" },
-  { label: "Revenue", href: "#revenue" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Features", href: "/#features" },
+  { label: "How It Works", href: "/#how-it-works" },
+  { label: "Revenue", href: "/#revenue" },
+  { label: "FAQ", href: "/#faq" },
 ] as const;
 
 // ── Problem Cards (The Current Reality) ──

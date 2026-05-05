@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 
 export default function Footer() {
@@ -6,7 +7,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10 md:gap-8">
         {/* Left: Branding & Copyright */}
         <div className="flex flex-col gap-2 items-center md:items-start">
-          <div className="text-xl font-bold text-on-surface">OMH</div>
+          <Link to="/" className="text-xl font-bold text-on-surface">OMH</Link>
           <div className="text-on-surface/60 font-body text-xs tracking-wide">
             © 2026 OMH. All rights reserved.
           </div>
@@ -14,15 +15,18 @@ export default function Footer() {
 
         {/* Center: Nav Links */}
         <div className="flex gap-8 font-body text-sm tracking-wide">
-          {["Terms", "Privacy", "Careers", "Press"].map((item) => (
-            <a
-              key={item}
-              href="#"
-              className="text-on-surface/60 hover:text-primary transition-colors"
-            >
-              {item}
-            </a>
-          ))}
+          <Link to="/terms-conditions" className="text-on-surface/60 hover:text-primary transition-colors">
+            Terms
+          </Link>
+          <Link to="/privacy-policy" className="text-on-surface/60 hover:text-primary transition-colors">
+            Privacy
+          </Link>
+          <a href="#" className="text-on-surface/60 hover:text-primary transition-colors">
+            Careers
+          </a>
+          <a href="#" className="text-on-surface/60 hover:text-primary transition-colors">
+            Press
+          </a>
         </div>
 
         {/* Right: Crafted By Badge */}

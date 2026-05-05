@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { NAV_LINKS } from "../lib/constants";
@@ -33,13 +34,13 @@ export default function Navbar() {
       >
         <nav className="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
           {/* Logo */}
-          <a
-            href="#"
+          <Link
+            to="/"
             className="text-2xl font-black tracking-tighter text-primary-container flex items-center gap-1"
           >
             OMH
             <span className="w-2 h-2 bg-secondary-container rounded-full animate-pulse" />
-          </a>
+          </Link>
 
           {/* Desktop Links */}
           <div className="hidden md:flex gap-8 items-center font-headline font-bold tracking-tight text-sm uppercase">
