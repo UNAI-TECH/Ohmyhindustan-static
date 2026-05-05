@@ -69,7 +69,7 @@ export default function PrivacyPolicy() {
 
           <h2 className="text-2xl font-bold text-on-surface mt-10 mb-4 font-headline">6. Contact Us</h2>
           <p>
-            If you have questions or comments about this policy, you may email us at support@ohmyhindustan.in or by post to our corporate office.
+            If you have questions or comments about this policy, you may email us at support@itsomh.com or by post to our corporate office.
           </p>
         </div>
       </motion.div>

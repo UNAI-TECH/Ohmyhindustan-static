@@ -19,7 +19,7 @@ export default function TermsAndConditions() {
         <div className="prose prose-lg prose-slate text-on-surface/80 max-w-none space-y-6">
           <p>
             These Terms and Conditions constitute a legally binding agreement made between you, whether personally or on behalf of an entity (“you”) 
-            and Oh My Hindustan ("OMH", “we”, “us”, or “our”), concerning your access to and use of the ohmyhindustan.in website as well as 
+            and Oh My Hindustan ("OMH", “we”, “us”, or “our”), concerning your access to and use of the itsomh.com website as well as 
             any other media form, media channel, mobile website or mobile application related, linked, or otherwise connected thereto.
           </p>
           <p>
@@ -69,7 +69,7 @@ export default function TermsAndConditions() {
 
           <h2 className="text-2xl font-bold text-on-surface mt-10 mb-4 font-headline">5. Contact Information</h2>
           <p>
-            In order to resolve a complaint regarding the Site or to receive further information regarding use of the Site, please contact us at support@ohmyhindustan.in.
+            In order to resolve a complaint regarding the Site or to receive further information regarding use of the Site, please contact us at support@itsomh.com.
           </p>
         </div>
       </motion.div>
