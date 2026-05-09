@@ -36,10 +36,9 @@ export default function Navbar() {
           {/* Logo */}
           <Link
             to="/"
-            className="text-2xl font-black tracking-tighter text-primary-container flex items-center gap-1"
+            className="flex items-center"
           >
-            OMH
-            <span className="w-2 h-2 bg-secondary-container rounded-full animate-pulse" />
+            <img src="/logo.png" alt="OMH Logo" className="h-10 w-auto" />
           </Link>
 
           {/* Desktop Links */}

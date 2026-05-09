@@ -7,7 +7,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10 md:gap-8">
         {/* Left: Branding & Copyright */}
         <div className="flex flex-col gap-2 items-center md:items-start">
-          <Link to="/" className="text-xl font-bold text-on-surface">OMH</Link>
+          <Link to="/" className="flex items-center">
+            <img src="/logo.png" alt="OMH Logo" className="h-10 w-auto" />
+          </Link>
           <div className="text-on-surface/60 font-body text-xs tracking-wide">
             © 2026 OMH. All rights reserved.
           </div>
