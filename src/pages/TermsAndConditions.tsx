@@ -19,7 +19,7 @@ export default function TermsAndConditions() {
         <div className="prose prose-lg prose-slate text-on-surface/80 max-w-none space-y-6">
           <p>
             These Terms and Conditions constitute a legally binding agreement made between you, whether personally or on behalf of an entity (“you”) 
-            and Oh My Hindustan ("OMH", “we”, “us”, or “our”), concerning your access to and use of the itsomh.com website as well as 
+            and Its OMH ("OMH", “we”, “us”, or “our”), concerning your access to and use of the itsomh.com website as well as 
             any other media form, media channel, mobile website or mobile application related, linked, or otherwise connected thereto.
           </p>
           <p>

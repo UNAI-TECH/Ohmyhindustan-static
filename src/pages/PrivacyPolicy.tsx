@@ -18,7 +18,7 @@ export default function PrivacyPolicy() {
 
         <div className="prose prose-lg prose-slate text-on-surface/80 max-w-none space-y-6">
           <p>
-            Welcome to Oh My Hindustan (OMH). We are committed to protecting your personal information and your right to privacy. 
+            Welcome to Its OMH (OMH). We are committed to protecting your personal information and your right to privacy. 
             If you have any questions or concerns about our policy, or our practices with regards to your personal information, 
             please contact us.
           </p>
