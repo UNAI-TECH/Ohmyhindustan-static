@@ -34,10 +34,10 @@ export default function CTASection() {
           </p>
           <div className="flex flex-wrap justify-center gap-4 md:gap-6">
             <MagneticButton className="bg-white text-primary-container px-8 md:px-10 py-4 md:py-5 rounded-full font-black cursor-pointer text-base md:text-lg shadow-2xl hover:shadow-white/20 transition-shadow">
-              Download OMH Now
+              Download PostsApp Now
             </MagneticButton>
             <a 
-              href="https://www.itsomh.online/" 
+              href="https://www.postsapp.online/" 
               target="_blank" 
               rel="noopener noreferrer"
             >

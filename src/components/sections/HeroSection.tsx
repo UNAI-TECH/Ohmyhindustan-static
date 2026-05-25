@@ -50,7 +50,7 @@ export default function HeroSection() {
               animate="visible"
               className="text-[13px] md:text-base lg:text-lg text-on-surface-variant max-w-lg mb-6 lg:mb-8 leading-relaxed px-2 lg:px-0"
             >
-              OMH is the platform where creators and voices like yours thrive 
+              PostsApp is the platform where creators and voices like yours thrive 
               without algorithms deciding your worth, with real rewards for your work.
             </motion.p>
 
@@ -76,7 +76,7 @@ export default function HeroSection() {
                 Download Now
               </MagneticButton>
               <a 
-                href="https://www.itsomh.online/" 
+                href="https://www.postsapp.online/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-full lg:w-auto"

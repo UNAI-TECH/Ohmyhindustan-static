@@ -8,43 +8,43 @@ const COMPARISON_DATA = [
     feature: "Revenue Share",
     legacy: "10-30% (After hidden fees)",
     traditional: "Fixed Salary / No Share",
-    omh: "60% (Net & Transparent)",
-    isOmhPositive: true,
+    postsapp: "60% (Net & Transparent)",
+    isPostsAppPositive: true,
   },
   {
     feature: "Content Ownership",
     legacy: "Platform License (Heavy)",
     traditional: "Corporate Owned",
-    omh: "100% Creator Owned",
-    isOmhPositive: true,
+    postsapp: "100% Creator Owned",
+    isPostsAppPositive: true,
   },
   {
     feature: "Algorithmic Control",
     legacy: "Black-Box Algorithms",
     traditional: "Editorial Gatekeeping",
-    omh: "Zero Secret Algorithms",
-    isOmhPositive: true,
+    postsapp: "Zero Secret Algorithms",
+    isPostsAppPositive: true,
   },
   {
     feature: "Reach Priority",
     legacy: "Engagement Bait / Pay-to-Play",
     traditional: "Corporate Interests",
-    omh: "Chronological Merit",
-    isOmhPositive: true,
+    postsapp: "Chronological Merit",
+    isPostsAppPositive: true,
   },
   {
     feature: "Data Privacy",
     legacy: "Aggressive Data Mining",
     traditional: "Tracking & Profiling",
-    omh: "Zero Personal Tracking",
-    isOmhPositive: true,
+    postsapp: "Zero Personal Tracking",
+    isPostsAppPositive: true,
   },
   {
     feature: "Shadowbanning",
     legacy: "Secret & Common",
     traditional: "Total Suppression",
-    omh: "Never — Strictly Merit",
-    isOmhPositive: true,
+    postsapp: "Never — Strictly Merit",
+    isPostsAppPositive: true,
   },
 ];
 
@@ -64,7 +64,7 @@ export default function ComparisonTableSection() {
             The Digital Reformation
           </h2>
           <p className="text-on-surface-variant text-base md:text-lg max-w-2xl mx-auto">
-            See how OMH fundamentally rewrites the rules of the creator economy compared to legacy systems.
+            See how PostsApp fundamentally rewrites the rules of the creator economy compared to legacy systems.
           </p>
         </motion.div>
 
@@ -78,7 +78,7 @@ export default function ComparisonTableSection() {
                 <th className="py-6 px-4 text-left font-headline font-bold text-on-surface-variant/50 uppercase tracking-widest text-xs">Feature</th>
                 <th className="py-6 px-4 text-center font-headline font-bold text-on-surface-variant/50 uppercase tracking-widest text-xs">Legacy Platforms</th>
                 <th className="py-6 px-4 text-center font-headline font-bold text-on-surface-variant/50 uppercase tracking-widest text-xs">Traditional Media</th>
-                <th className="py-6 px-4 text-center bg-primary/5 rounded-t-2xl font-headline font-bold text-primary uppercase tracking-widest text-xs border-x border-t border-primary/20">OMH Platform</th>
+                <th className="py-6 px-4 text-center bg-primary/5 rounded-t-2xl font-headline font-bold text-primary uppercase tracking-widest text-xs border-x border-t border-primary/20">PostsApp Platform</th>
               </tr>
             </thead>
             <tbody>
@@ -100,7 +100,7 @@ export default function ComparisonTableSection() {
                   <td className="py-6 px-4 text-center bg-primary/5 border-x border-primary/20 relative">
                     <div className="flex items-center justify-center gap-2 font-bold text-primary">
                       <Check size={18} className="text-primary" />
-                      {row.omh}
+                      {row.postsapp}
                     </div>
                     {index === COMPARISON_DATA.length - 1 && (
                       <div className="absolute bottom-0 left-0 right-0 h-px bg-primary/20" />

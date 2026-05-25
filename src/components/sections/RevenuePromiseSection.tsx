@@ -74,7 +74,7 @@ export default function RevenuePromiseSection() {
           </motion.div>
           {/* Platform column */}
           <motion.div variants={fadeUpVariant} className="bg-surface/5 border border-surface/10 rounded-2xl p-8">
-            <h3 className="text-xl font-bold font-headline mb-2 text-surface/80">40% to OMH Platform</h3>
+            <h3 className="text-xl font-bold font-headline mb-2 text-surface/80">40% to PostsApp Platform</h3>
             <ul className="space-y-3 mt-5">
               {PLATFORM_USES.map((b) => (
                 <li key={b} className="flex items-start gap-3 text-surface/50 text-sm">

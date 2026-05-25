@@ -42,7 +42,7 @@ export default function FAQSection() {
       <motion.div ref={ref} variants={staggerContainer} initial="hidden" animate={inView ? "visible" : "hidden"} className="max-w-3xl mx-auto">
         <motion.div variants={fadeUpVariant} className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-headline font-bold tracking-tighter mb-4">Frequently Asked Questions</h2>
-          <p className="text-on-surface-variant text-lg">Everything you need to know about OMH.</p>
+          <p className="text-on-surface-variant text-lg">Everything you need to know about PostsApp.</p>
         </motion.div>
 
         {/* Tab Switcher */}

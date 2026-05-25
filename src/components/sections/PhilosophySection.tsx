@@ -26,13 +26,13 @@ export default function PhilosophySection() {
         {/* Philosophy Statement */}
         <motion.div variants={fadeUpVariant} className="text-center mb-16 md:mb-20 max-w-4xl mx-auto">
           <span className="text-xs font-bold tracking-[0.3em] uppercase text-primary-fixed-dim mb-6 block">
-            The OMH Philosophy
+            The PostsApp Philosophy
           </span>
           <h2 className="text-3xl md:text-5xl font-headline font-bold leading-tight mb-8">
             Expression Without Barriers.
           </h2>
           <p className="text-surface/60 text-base md:text-lg leading-relaxed">
-            In a world of crowded feeds and hidden agendas, OMH was born from a
+            In a world of crowded feeds and hidden agendas, PostsApp was born from a
             simple, radical idea: every mind matters and every creator deserves a
             stage. We aren't just another app; we're a movement to return the
             power of digital expression to where it belongs —{" "}

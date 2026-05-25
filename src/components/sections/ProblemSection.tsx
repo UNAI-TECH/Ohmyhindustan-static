@@ -45,7 +45,7 @@ export default function ProblemSection() {
         {/* Section Header */}
         <motion.div variants={fadeUpVariant} className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-headline font-bold tracking-tighter mb-4">
-            Why OMH?
+            Why PostsApp?
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-6" />
           <p className="text-on-surface-variant text-lg max-w-2xl mx-auto">
@@ -90,7 +90,7 @@ export default function ProblemSection() {
               <div className="flex items-center gap-3 mb-8">
                 <span className="w-3 h-3 bg-green-500 rounded-full" />
                 <h3 className="text-xl font-headline font-bold uppercase tracking-wider text-on-surface">
-                  OMH Changes the Game
+                  PostsApp Changes the Game
                 </h3>
               </div>
               <div className="space-y-5">

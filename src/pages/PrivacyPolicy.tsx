@@ -18,14 +18,14 @@ export default function PrivacyPolicy() {
 
         <div className="prose prose-lg prose-slate text-on-surface/80 max-w-none space-y-6">
           <p>
-            Welcome to Its OMH (OMH). We are committed to protecting your personal information and your right to privacy. 
+            Welcome to PostsApp. We are committed to protecting your personal information and your right to privacy. 
             If you have any questions or concerns about our policy, or our practices with regards to your personal information, 
             please contact us.
           </p>
 
           <h2 className="text-2xl font-bold text-on-surface mt-10 mb-4 font-headline">1. Information We Collect</h2>
           <p>
-            We collect personal information that you provide to us when registering at the OMH platform expressing an interest 
+            We collect personal information that you provide to us when registering at the PostsApp platform expressing an interest 
             in obtaining information about us or our products and services, when participating in activities on the platform 
             (such as posting news or stories as a citizen journalist) or otherwise contacting us.
           </p>
@@ -51,7 +51,7 @@ export default function PrivacyPolicy() {
           <h2 className="text-2xl font-bold text-on-surface mt-10 mb-4 font-headline">3. Will Your Information Be Shared With Anyone?</h2>
           <p>
             We only share information with your consent, to comply with laws, to provide you with services, 
-            to protect your rights, or to fulfill business obligations. Because OMH operates on a strict zero hidden algorithm policy, 
+            to protect your rights, or to fulfill business obligations. Because PostsApp operates on a strict zero hidden algorithm policy, 
             we do not sell your personal data to third-party ad brokers to manipulate your feed.
           </p>
 
@@ -69,7 +69,7 @@ export default function PrivacyPolicy() {
 
           <h2 className="text-2xl font-bold text-on-surface mt-10 mb-4 font-headline">6. Contact Us</h2>
           <p>
-            If you have questions or comments about this policy, you may email us at support@itsomh.com or by post to our corporate office.
+            If you have questions or comments about this policy, you may email us at support@postsapp.com or by post to our corporate office.
           </p>
         </div>
       </motion.div>

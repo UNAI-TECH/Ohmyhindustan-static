@@ -38,7 +38,7 @@ export default function Navbar() {
             to="/"
             className="flex items-center"
           >
-            <img src="/logo.png" alt="OMH Logo" className="h-10 w-auto" />
+            <img src="/logo.png" alt="PostsApp Logo" className="h-10 w-auto" />
           </Link>
 
           {/* Desktop Links */}

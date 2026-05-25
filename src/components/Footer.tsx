@@ -8,10 +8,10 @@ export default function Footer() {
         {/* Left: Branding & Copyright */}
         <div className="flex flex-col gap-2 items-center md:items-start">
           <Link to="/" className="flex items-center">
-            <img src="/logo.png" alt="OMH Logo" className="h-10 w-auto" />
+            <img src="/logo.png" alt="PostsApp Logo" className="h-10 w-auto" />
           </Link>
           <div className="text-on-surface/60 font-body text-xs tracking-wide">
-            © 2026 OMH. All rights reserved.
+            © 2026 PostsApp. All rights reserved.
           </div>
         </div>
 

@@ -41,7 +41,7 @@ export const PROBLEM_ITEMS = [
   },
 ] as const;
 
-// ── Solution Cards (OMH Changes the Game) ──
+// ── Solution Cards (PostsApp Changes the Game) ──
 export const SOLUTION_ITEMS = [
   {
     icon: "Users",
@@ -250,7 +250,7 @@ export const CITIZEN_JOURNEY = [
     step: 1,
     title: "Download & Sign Up",
     details: [
-      "Download the OMH app (iOS/Android)",
+      "Download the PostsApp app (iOS/Android)",
       "Create account with email, phone, or Google",
       "Set up your interests and follow creators",
     ],
@@ -322,7 +322,7 @@ export const USE_CASES = [
     role: "Investigative Journalist",
     avatar: "P",
     quote:
-      "I investigated corruption in local government — but no major outlet would touch it. On OMH, my investigation reached 50,000 people in a week. The community voted it to the top. Now I earn from my work directly, with no editor killing my story for political reasons. My voice matters again.",
+      "I investigated corruption in local government — but no major outlet would touch it. On PostsApp, my investigation reached 50,000 people in a week. The community voted it to the top. Now I earn from my work directly, with no editor killing my story for political reasons. My voice matters again.",
     stats: {
       published: "12 in-depth investigations",
       followers: "45,000",
@@ -334,7 +334,7 @@ export const USE_CASES = [
     role: "Grassroots Reporter",
     avatar: "R",
     quote:
-      "I cover stories from my small town that the national media ignores. Before OMH, no one cared. Now I have 12,000 followers interested in local news. I'm building a community of people who understand their own backyard matters.",
+      "I cover stories from my small town that the national media ignores. Before PostsApp, no one cared. Now I have 12,000 followers interested in local news. I'm building a community of people who understand their own backyard matters.",
     stats: {
       published: "120+ articles",
       followers: "12,000",
@@ -346,7 +346,7 @@ export const USE_CASES = [
     role: "Documentary Creator",
     avatar: "A",
     quote:
-      "I create documentaries about social issues, but YouTube's algorithm buried my videos. On OMH, people who care about these issues find my work. The 60/40 split means I earn enough to keep creating without sponsors telling me what to say.",
+      "I create documentaries about social issues, but YouTube's algorithm buried my videos. On PostsApp, people who care about these issues find my work. The 60/40 split means I earn enough to keep creating without sponsors telling me what to say.",
     stats: {
       published: "24 documentaries",
       followers: "38,000",
@@ -358,7 +358,7 @@ export const USE_CASES = [
     role: "Eyewitness Reporter",
     avatar: "V",
     quote:
-      "When a fire broke out in my neighborhood, I filmed and reported it on OMH within minutes. My footage got 200,000 views. Finally, citizens on the ground get to tell their own stories without waiting for news vans.",
+      "When a fire broke out in my neighborhood, I filmed and reported it on PostsApp within minutes. My footage got 200,000 views. Finally, citizens on the ground get to tell their own stories without waiting for news vans.",
     stats: {
       published: "45 stories",
       followers: "8,500",
@@ -370,12 +370,12 @@ export const USE_CASES = [
 // ── FAQ — General ──
 export const FAQ_GENERAL = [
   {
-    q: "How is OMH different from Facebook, Twitter, and YouTube?",
+    q: "How is PostsApp different from Facebook, Twitter, and YouTube?",
     a: "We don't use hidden algorithms. Your content's reach is determined by real community engagement, not a black-box algorithm. We're 60% creator revenue (vs. 10-30% elsewhere), completely transparent about our ranking system, and we never shadowban or suppress content based on politics. We're a platform built for creators, not for advertising profit.",
   },
   {
-    q: "Is OMH regulated? Who moderates content?",
-    a: "OMH operates under Indian law and complies with all relevant regulations. Our moderation policy is open and available to everyone. We remove content that violates clear, published guidelines (hate speech, violence, explicit content). We never remove content for political reasons. If your content is removed, you get a detailed explanation and the ability to appeal.",
+    q: "Is PostsApp regulated? Who moderates content?",
+    a: "PostsApp operates under Indian law and complies with all relevant regulations. Our moderation policy is open and available to everyone. We remove content that violates clear, published guidelines (hate speech, violence, explicit content). We never remove content for political reasons. If your content is removed, you get a detailed explanation and the ability to appeal.",
   },
   {
     q: "How do I know my earnings are real?",
@@ -399,14 +399,14 @@ export const FAQ_CREATOR = [
   },
   {
     q: "Do I lose ownership of my content?",
-    a: "No. You own 100% of your work. You can republish on other platforms, sell exclusive content, or remove it from OMH anytime. OMH gets a license to display your content while you're on the platform, but you retain all rights.",
+    a: "No. You own 100% of your work. You can republish on other platforms, sell exclusive content, or remove it from PostsApp anytime. PostsApp gets a license to display your content while you're on the platform, but you retain all rights.",
   },
 ] as const;
 
 // ── FAQ — Citizen ──
 export const FAQ_CITIZEN = [
   {
-    q: "Is OMH free to use?",
+    q: "Is PostsApp free to use?",
     a: "Yes, completely free. You'll never pay to read, comment, or follow creators. We make money through ads and sponsorships — 60% of which goes to creators.",
   },
   {
