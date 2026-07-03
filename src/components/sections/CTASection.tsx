@@ -14,7 +14,7 @@ export default function CTASection() {
         variants={fadeUpVariant}
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
-        className="py-20 md:py-24 rounded-[2rem] bg-gradient-to-br from-primary-container to-[#8E1F4F] relative overflow-hidden"
+        className="py-20 md:py-24 rounded-[2rem] bg-gradient-to-br from-primary-container to-[#721513] relative overflow-hidden"
       >
         {/* Globe Watermark */}
         <div className="absolute inset-0 opacity-10 pointer-events-none">
@@ -33,7 +33,7 @@ export default function CTASection() {
             Join thousands of citizens, journalists, and creators who are building the future of journalism together.
           </p>
           <div className="flex flex-wrap justify-center gap-4 md:gap-6">
-            <MagneticButton className="bg-white text-primary-container px-8 md:px-10 py-4 md:py-5 rounded-full font-black cursor-pointer text-base md:text-lg shadow-2xl hover:shadow-white/20 transition-shadow">
+            <MagneticButton className="bg-white text-primary px-8 md:px-10 py-4 md:py-5 rounded-full font-black cursor-pointer text-base md:text-lg shadow-2xl hover:shadow-white/20 transition-shadow">
               Download PostsApp Now
             </MagneticButton>
             <a 
@@ -46,9 +46,6 @@ export default function CTASection() {
               </MagneticButton>
             </a>
           </div>
-          <a href="#features" className="inline-block mt-6 text-white/50 hover:text-white/80 text-sm font-medium underline underline-offset-4 transition-colors">
-            Learn More
-          </a>
         </div>
       </motion.div>
     </section>

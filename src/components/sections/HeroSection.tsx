@@ -12,7 +12,7 @@ export default function HeroSection() {
       className="relative min-h-screen lg:min-h-[700px] bg-white overflow-hidden flex flex-col"
     >
       {/* Mobile & Desktop Container */}
-      <div className="flex-1 flex flex-col items-center justify-center lg:items-start pt-12 lg:pt-20 pb-4 lg:pb-8 px-6 max-w-7xl mx-auto w-full relative z-10">
+      <div className="flex-1 flex flex-col items-center justify-center lg:items-start pt-20 md:pt-24 lg:pt-20 pb-4 lg:pb-8 px-6 max-w-7xl mx-auto w-full relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-12 items-center w-full h-full">
           
           {/* Main Content (Centered on mobile, left-aligned on desktop) */}

@@ -13,39 +13,58 @@ export default function Globe() {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
+    let globe: any;
     let phi = DEFAULT_PHI;
     let animationId: number;
-    const width = canvas.offsetWidth;
 
-    const globe = createGlobe(canvas, {
-      devicePixelRatio: 2,
-      width: width * 2,
-      height: width * 2,
-      phi: DEFAULT_PHI,
-      theta: DEFAULT_THETA,
-      dark: 0,
-      diffuse: 1.4,
-      mapSamples: 16000,
-      mapBrightness: 6,
-      baseColor: [1.0, 0.65, 0.2],
-      markerColor: [0.75, 0.23, 0.17],
-      glowColor: [1.0, 0.55, 0.1],
-      markers: [],
-      scale: DEFAULT_SCALE,
+    const resizeObserver = new ResizeObserver((entries) => {
+      for (let entry of entries) {
+        const rect = entry.contentRect;
+        const width = rect.width;
+        if (width <= 0) continue;
+
+        if (globe) {
+          globe.destroy();
+        }
+
+        globe = createGlobe(canvas, {
+          devicePixelRatio: 2,
+          width: width * 2,
+          height: width * 2,
+          phi: phi,
+          theta: DEFAULT_THETA,
+          dark: 0,
+          diffuse: 1.4,
+          mapSamples: 16000,
+          mapBrightness: 6,
+          baseColor: [0.718, 0.125, 0.118],
+          markerColor: [0.9, 0.1, 0.1],
+          glowColor: [0.85, 0.25, 0.25],
+          markers: [],
+          scale: DEFAULT_SCALE,
+        });
+      }
     });
+
+    resizeObserver.observe(canvas.parentElement || canvas);
 
     function animate() {
       phi += 0.003;
-      globe.update({
-        phi,
-      });
+      if (globe) {
+        globe.update({
+          phi,
+        });
+      }
       animationId = requestAnimationFrame(animate);
     }
     animationId = requestAnimationFrame(animate);
 
     return () => {
+      resizeObserver.disconnect();
       cancelAnimationFrame(animationId);
-      globe.destroy();
+      if (globe) {
+        globe.destroy();
+      }
     };
   }, []);
 

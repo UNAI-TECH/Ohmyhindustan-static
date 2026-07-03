@@ -20,14 +20,14 @@ export default function Navbar() {
         className="fixed top-0 w-full z-50 transition-colors duration-300"
         animate={{
           backgroundColor: scrolled
-            ? "rgba(237,233,223,0.85)"
-            : "rgba(253,249,239,0.0)",
+            ? "rgba(252,252,252,0.85)"
+            : "rgba(252,252,252,0.0)",
           backdropFilter: scrolled ? "blur(20px)" : "blur(0px)",
           borderBottomColor: scrolled
-            ? "rgba(28,28,22,0.1)"
-            : "rgba(28,28,22,0)",
+            ? "rgba(26,17,17,0.08)"
+            : "rgba(26,17,17,0)",
           boxShadow: scrolled
-            ? "0 20px 40px rgba(28,28,22,0.06)"
+            ? "0 20px 40px rgba(26,17,17,0.04)"
             : "0 0 0 rgba(0,0,0,0)",
         }}
         style={{ borderBottomWidth: 1, borderBottomStyle: "solid" }}
@@ -38,7 +38,7 @@ export default function Navbar() {
             to="/"
             className="flex items-center"
           >
-            <img src="/logo.png" alt="PostsApp Logo" className="h-10 w-auto" />
+            <img src="/logo.png" alt="PostsApp Logo" className="h-10 md:h-14 w-auto" />
           </Link>
 
           {/* Desktop Links */}
@@ -47,7 +47,7 @@ export default function Navbar() {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-on-surface/80 hover:text-primary-container hover:scale-105 transition-all duration-300"
+                className="text-on-surface/80 hover:text-primary hover:scale-105 transition-all duration-300"
               >
                 {link.label}
               </a>
@@ -76,7 +76,7 @@ export default function Navbar() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-40 bg-primary-container flex flex-col items-center justify-center gap-8"
+            className="fixed inset-0 z-40 bg-primary flex flex-col items-center justify-center gap-8"
           >
             {NAV_LINKS.map((link, i) => (
               <motion.a
@@ -89,7 +89,7 @@ export default function Navbar() {
                   transition: { delay: i * 0.1 },
                 }}
                 exit={{ opacity: 0, y: -20 }}
-                className="text-white text-3xl font-headline font-bold uppercase tracking-tight"
+                className="text-white text-3xl font-headline font-bold uppercase tracking-tight hover:text-white/80"
                 onClick={() => setMobileOpen(false)}
               >
                 {link.label}
@@ -102,7 +102,7 @@ export default function Navbar() {
                 scale: 1,
                 transition: { delay: 0.4 },
               }}
-              className="bg-white text-primary-container px-8 py-4 rounded-full font-bold text-lg mt-4"
+              className="bg-white text-primary px-8 py-4 rounded-full font-bold text-lg mt-4 shadow-xl"
               onClick={() => setMobileOpen(false)}
             >
               Download App
